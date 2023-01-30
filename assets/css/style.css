@@ -1,7 +1,10 @@
+/* added to universal: color, font family(gills sans) */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -13,7 +16,6 @@ header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 header h1 {
@@ -31,7 +33,6 @@ nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
@@ -45,7 +46,6 @@ nav ul li {
 }
 
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
@@ -53,11 +53,11 @@ p {
     font-size: 16px;
 }
 
-.hero {
+/* changed from class to id and moved image path to html file */
+#hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -86,18 +86,16 @@ aside {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
  
-/* replaced unique class selectors for all aside sections*/
+/* replaced unique selectors for all aside sections */
 
 aside section {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
-/* replaced unique class selectors for all aside section h3*/
+/* replaced unique selectors for all aside section h3 */
 aside section h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -111,61 +109,24 @@ aside section img {
 }
 
 /* can share attr */
-.search-engine-optimization {
+section section {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
-    color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
- 
-/* these img tags can share attr */
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
+/* these img tags share attr */
+section section img {
     max-height: 200px;
 }
   
-/* these h2 tags can share attr */
-.search-engine-optimization h2 {
+/* these h2 tags share attr */
+section section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
  /* replaced footer class with footer */
 footer {
     padding: 30px;
